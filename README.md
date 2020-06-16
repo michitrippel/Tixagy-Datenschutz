@@ -2,7 +2,7 @@
 
 
 
-<div id="dsg-lc-missing-generated-de" class="dsg-lc-missing dsg-license-content-info-shop"> 				<div class="title"><a href="https://datenschutz-generator.de/produkt-kategorie/datenschutzerklaerung/" target="shop" title="Produkt im Shop aufrufen">Bitte erwerben Sie hier den Lizenzschlüssel</a> für das Dokument "Datenschutzerklärung", um es vollständig zu erstellen.</div> 				<div class="dsg-license-content-info-shop-left"><p>Sie haben schon einen Lizenzschlüssel? <a title="Lizenzschlüssel im Premiumbereich eingeben." href="#dsg-group-premium">Geben Sie ihn bitte oben im Premiumbereich ein</a></p>				<p>Sie möchten wissen wie der Lizenzerwerb funktioniert? Schauen Sie dazu bitte <a href="https://datenschutz-generator.de/help-premium/" target="help-license" title="Anleitung für den Lizenzerwerb">in unsere Anleitung</a>.</p></div>				<a class="dsg-license-content-info-shop-right"></a></div> 	<h1>Datenschutzerklärung</h1>
+# Datenschutzerklärung
 <h2>Einleitung</h2>
 <p>Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als "Daten“ bezeichnet) wir zu welchen Zwecken und in welchem Umfang im Rahmen der Bereitstellung unserer Applikation verarbeiten.</p>
 <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
