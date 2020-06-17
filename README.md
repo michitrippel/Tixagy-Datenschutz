@@ -1,4 +1,4 @@
-## Datebschutzerklärung für Tixagy
+## Datenschutzerklärung für Tixagy
 
 
 
