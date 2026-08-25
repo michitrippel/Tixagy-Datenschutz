@@ -8,7 +8,7 @@ permalink: /
 ---
 
 <main id="main-content" class="language-hub" data-language-chooser>
-  <p class="hub-eyebrow">Tixagy Privacy</p>
+  <p class="hub-eyebrow">Privacy &amp; data</p>
   <h1>Choose your language.</h1>
   <p class="hub-intro">
     Select the language in which you want to open the privacy information.
@@ -31,6 +31,11 @@ permalink: /
   </div>
 
   <p class="hub-note">
-    The complete legally reviewed text is currently available in German. Other language pages clearly identify the German original while reviewed translations are being prepared.
+    The complete current text is available in German. Other language pages clearly identify the German original while translations are being prepared.
   </p>
+
+  <a class="hub-account-action" href="{{ '/delete-account/' | relative_url }}">
+    <span>Account &amp; data</span>
+    <strong>Request deletion of your Tixagy account</strong>
+  </a>
 </main>

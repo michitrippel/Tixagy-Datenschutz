@@ -4,27 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark">
-    <meta name="theme-color" content="#0b1220">
+    <meta name="theme-color" content="#0a111d">
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/tixagy-logo.png' | absolute_url }}">
     <title>{{ page.title | default: site.title | escape }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
-    {% for language in site.data.languages %}
-      <link rel="alternate" hreflang="{{ language.code }}" href="{{ language.path | absolute_url }}">
-    {% endfor %}
+    <link rel="icon" type="image/png" href="{{ '/assets/images/tixagy-icon.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/tixagy-icon.png' | relative_url }}">
+    {% unless page.hide_language_alternates %}
+      <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+      {% for language in site.data.languages %}
+        <link rel="alternate" hreflang="{{ language.code }}" href="{{ language.path | absolute_url }}">
+      {% endfor %}
+    {% endunless %}
     <link rel="stylesheet" href="{{ '/assets/css/privacy.css' | relative_url }}">
     <script src="{{ '/assets/js/language.js' | relative_url }}" defer></script>
+    {% if page.page_script %}
+      <script src="{{ page.page_script | relative_url }}" defer></script>
+    {% endif %}
   </head>
   <body class="{{ page.body_class }}">
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content">{% if page.lang == "de" %}Zum Inhalt{% else %}Skip to content{% endif %}</a>
 
     <header class="site-header">
-      <a class="brand" href="{{ '/?choose=1' | relative_url }}" aria-label="Tixagy privacy language selection">
-        <span class="brand-mark" aria-hidden="true">T</span>
-        <span>
-          <strong>Tixagy</strong>
-          <small>Privacy</small>
-        </span>
+      <a class="brand" href="{{ '/?choose=1' | relative_url }}" aria-label="{% if page.lang == 'de' %}Tixagy Datenschutz – Sprachauswahl{% else %}Tixagy privacy language selection{% endif %}">
+        <img class="brand-logo" src="{{ '/assets/images/tixagy-logo.png' | relative_url }}" alt="Tixagy">
+        <span class="brand-section">Privacy</span>
       </a>
     </header>
 
@@ -32,7 +41,10 @@
 
     <footer class="site-footer">
       <p>© {{ site.time | date: '%Y' }} Tridots UG (haftungsbeschränkt)</p>
-      <a href="mailto:service@tixagy.com">service@tixagy.com</a>
+      <nav class="footer-links" aria-label="{% if page.lang == 'de' %}Rechtliches und Kontakt{% else %}Legal and contact{% endif %}">
+        <a href="{{ '/delete-account/' | relative_url }}">{% if page.lang == "de" %}Konto löschen{% else %}Delete account{% endif %}</a>
+        <a href="mailto:service@tixagy.com">service@tixagy.com</a>
+      </nav>
     </footer>
   </body>
 </html>
