@@ -89,7 +89,7 @@ button:focus-visible {
 
 .site-header {
   display: flex;
-  min-height: 6.5rem;
+  min-height: 4.75rem;
   align-items: center;
 }
 
@@ -107,17 +107,17 @@ button:focus-visible {
 
 .brand-logo {
   display: block;
-  width: clamp(8.5rem, 21vw, 10.5rem);
+  width: clamp(5.5rem, 14vw, 6.75rem);
   height: auto;
-  filter: drop-shadow(0 9px 22px rgb(0 0 0 / 32%));
+  filter: drop-shadow(0 6px 15px rgb(0 0 0 / 28%));
 }
 
 .brand-section {
-  padding: 0.27rem 0.62rem 0.24rem;
+  padding: 0.21rem 0.5rem 0.19rem;
   color: #1d130c;
   background: var(--orange);
   border-radius: 999px;
-  font-size: 0.7rem;
+  font-size: 0.58rem;
   font-weight: 850;
   letter-spacing: 0.12em;
   line-height: 1.25;
@@ -708,7 +708,7 @@ button:focus-visible {
 
 @media (max-width: 720px) {
   .site-header {
-    min-height: 5.75rem;
+    min-height: 4.35rem;
   }
 
   .brand {
@@ -716,7 +716,7 @@ button:focus-visible {
   }
 
   .brand-section {
-    font-size: 0.62rem;
+    font-size: 0.54rem;
   }
 
   .language-switcher {

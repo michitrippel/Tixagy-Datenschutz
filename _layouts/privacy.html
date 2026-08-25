@@ -7,8 +7,8 @@ layout: default
 <main id="main-content" class="policy-shell">
   <div class="policy-status">
     <span>{{ page.language_label }}</span>
-    {% if page.translation_status == "original" %}
-      <span class="status-badge status-original">Original</span>
+    {% if page.translation_status == "original" or page.translation_status == "complete" %}
+      <span class="status-badge status-original">{{ page.status_label | default: "Complete" }}</span>
     {% else %}
       <span class="status-badge">German original</span>
     {% endif %}

@@ -31,7 +31,7 @@ permalink: /
   </div>
 
   <p class="hub-note">
-    The complete current text is available in German. Other language pages clearly identify the German original while translations are being prepared.
+    Every listed language opens a complete localized privacy policy. Country-specific supervisory authorities and legal notes are included where applicable; the German version remains the controlling original.
   </p>
 
   <a class="hub-account-action" href="{{ '/delete-account/' | relative_url }}">

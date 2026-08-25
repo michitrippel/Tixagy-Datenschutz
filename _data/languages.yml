@@ -2,33 +2,61 @@
   label: Deutsch
   path: /privacy/de/
   availability: Vollständige Originalfassung
+  skip_label: Zum Inhalt
+  language_selection_label: Tixagy Datenschutz – Sprachauswahl
+  footer_label: Rechtliches und Kontakt
+  delete_label: Konto löschen
 
 - code: en
   label: English
   path: /privacy/en/
-  availability: English notice · German original
+  availability: Complete localized version
+  skip_label: Skip to content
+  language_selection_label: Tixagy privacy language selection
+  footer_label: Legal and contact
+  delete_label: Delete account
 
 - code: es
   label: Español
   path: /privacy/es/
-  availability: Aviso en español · original en alemán
+  availability: Versión localizada completa
+  skip_label: Ir al contenido
+  language_selection_label: Selección de idioma de privacidad de Tixagy
+  footer_label: Información legal y contacto
+  delete_label: Eliminar cuenta
 
 - code: fr
   label: Français
   path: /privacy/fr/
-  availability: Note en français · original allemand
+  availability: Version localisée complète
+  skip_label: Aller au contenu
+  language_selection_label: Sélection de la langue de confidentialité Tixagy
+  footer_label: Mentions légales et contact
+  delete_label: Supprimer le compte
 
 - code: it
   label: Italiano
   path: /privacy/it/
-  availability: Avviso in italiano · originale tedesco
+  availability: Versione localizzata completa
+  skip_label: Vai al contenuto
+  language_selection_label: Selezione della lingua per la privacy di Tixagy
+  footer_label: Informazioni legali e contatti
+  delete_label: Elimina account
 
 - code: pt
   label: Português
   path: /privacy/pt/
-  availability: Aviso em português · original em alemão
+  availability: Versão localizada completa
+  skip_label: Ir para o conteúdo
+  language_selection_label: Seleção do idioma da privacidade Tixagy
+  footer_label: Informação jurídica e contacto
+  delete_label: Eliminar conta
 
 - code: ru
   label: Русский
   path: /privacy/ru/
-  availability: Пояснение на русском · оригинал на немецком
+  availability: Полная локализованная версия
+  skip_label: Перейти к содержанию
+  language_selection_label: Выбор языка политики конфиденциальности Tixagy
+  footer_label: Правовая информация и контакты
+  delete_label: Удалить учётную запись

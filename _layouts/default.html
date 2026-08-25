@@ -27,11 +27,12 @@
       <script src="{{ page.page_script | relative_url }}" defer></script>
     {% endif %}
   </head>
+  {% assign current_language = site.data.languages | where: "code", page.lang | first %}
   <body class="{{ page.body_class }}">
-    <a class="skip-link" href="#main-content">{% if page.lang == "de" %}Zum Inhalt{% else %}Skip to content{% endif %}</a>
+    <a class="skip-link" href="#main-content">{{ current_language.skip_label | default: "Skip to content" }}</a>
 
     <header class="site-header">
-      <a class="brand" href="{{ '/?choose=1' | relative_url }}" aria-label="{% if page.lang == 'de' %}Tixagy Datenschutz – Sprachauswahl{% else %}Tixagy privacy language selection{% endif %}">
+      <a class="brand" href="{{ '/?choose=1' | relative_url }}" aria-label="{{ current_language.language_selection_label | default: 'Tixagy privacy language selection' }}">
         <img class="brand-logo" src="{{ '/assets/images/tixagy-logo.png' | relative_url }}" alt="Tixagy">
         <span class="brand-section">Privacy</span>
       </a>
@@ -41,8 +42,8 @@
 
     <footer class="site-footer">
       <p>© {{ site.time | date: '%Y' }} Tridots UG (haftungsbeschränkt)</p>
-      <nav class="footer-links" aria-label="{% if page.lang == 'de' %}Rechtliches und Kontakt{% else %}Legal and contact{% endif %}">
-        <a href="{{ '/delete-account/' | relative_url }}">{% if page.lang == "de" %}Konto löschen{% else %}Delete account{% endif %}</a>
+      <nav class="footer-links" aria-label="{{ current_language.footer_label | default: 'Legal and contact' }}">
+        <a href="{{ '/delete-account/' | relative_url }}">{{ current_language.delete_label | default: "Delete account" }}</a>
         <a href="mailto:service@tixagy.com">service@tixagy.com</a>
       </nav>
     </footer>

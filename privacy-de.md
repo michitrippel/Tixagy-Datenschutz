@@ -5,6 +5,7 @@ description: Datenschutzerklärung für die Tixagy-App.
 lang: de
 language_label: Deutsch
 translation_status: original
+status_label: Originalfassung
 permalink: /privacy/de/
 ---
 
