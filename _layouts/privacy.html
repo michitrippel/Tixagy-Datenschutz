@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include language-switcher.html %}
+
+<main id="main-content" class="policy-shell">
+  <div class="policy-status">
+    <span>{{ page.language_label }}</span>
+    {% if page.translation_status == "original" %}
+      <span class="status-badge status-original">Original</span>
+    {% else %}
+      <span class="status-badge">German original</span>
+    {% endif %}
+  </div>
+
+  <article class="policy-card">
+    {{ content }}
+  </article>
+</main>

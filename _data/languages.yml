@@ -1,0 +1,34 @@
+- code: de
+  label: Deutsch
+  path: /privacy/de/
+  availability: Vollständige Originalfassung
+
+- code: en
+  label: English
+  path: /privacy/en/
+  availability: English notice · German original
+
+- code: es
+  label: Español
+  path: /privacy/es/
+  availability: Aviso en español · original en alemán
+
+- code: fr
+  label: Français
+  path: /privacy/fr/
+  availability: Note en français · original allemand
+
+- code: it
+  label: Italiano
+  path: /privacy/it/
+  availability: Avviso in italiano · originale tedesco
+
+- code: pt
+  label: Português
+  path: /privacy/pt/
+  availability: Aviso em português · original em alemão
+
+- code: ru
+  label: Русский
+  path: /privacy/ru/
+  availability: Пояснение на русском · оригинал на немецком

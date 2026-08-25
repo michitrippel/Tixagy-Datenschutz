@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{{ page.title | default: site.title | escape }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+    {% for language in site.data.languages %}
+      <link rel="alternate" hreflang="{{ language.code }}" href="{{ language.path | absolute_url }}">
+    {% endfor %}
+    <link rel="stylesheet" href="{{ '/assets/css/privacy.css' | relative_url }}">
+    <script src="{{ '/assets/js/language.js' | relative_url }}" defer></script>
+  </head>
+  <body class="{{ page.body_class }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="{{ '/?choose=1' | relative_url }}" aria-label="Tixagy privacy language selection">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span>
+          <strong>Tixagy</strong>
+          <small>Privacy</small>
+        </span>
+      </a>
+    </header>
+
+    {{ content }}
+
+    <footer class="site-footer">
+      <p>© {{ site.time | date: '%Y' }} Tridots UG (haftungsbeschränkt)</p>
+      <a href="mailto:service@tixagy.com">service@tixagy.com</a>
+    </footer>
+  </body>
+</html>

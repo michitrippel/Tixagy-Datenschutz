@@ -1,0 +1,14 @@
+<nav class="language-switcher" aria-label="Language selection">
+  <a class="language-overview" href="{{ '/?choose=1' | relative_url }}">All languages</a>
+  <div class="language-links">
+    {% for language in site.data.languages %}
+      <a
+        href="{{ language.path | relative_url }}"
+        lang="{{ language.code }}"
+        hreflang="{{ language.code }}"
+        data-language="{{ language.code }}"
+        {% if page.lang == language.code %}aria-current="page"{% endif %}
+      >{{ language.label }}</a>
+    {% endfor %}
+  </div>
+</nav>

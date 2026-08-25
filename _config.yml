@@ -1,2 +1,10 @@
-theme: jekyll-theme-time-machine
-github: is\_project\_page:false
+title: Tixagy Privacy
+description: Privacy information for the Tixagy app
+url: https://tridots.de
+baseurl: ""
+lang: de
+markdown: kramdown
+permalink: pretty
+
+kramdown:
+  input: Kramdown
