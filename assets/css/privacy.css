@@ -466,6 +466,59 @@ button:focus-visible {
   content: "→";
 }
 
+.widget-test-shell {
+  width: min(100% - 2rem, 1180px);
+  margin-inline: auto;
+  padding: clamp(2rem, 7vw, 5rem) 0 3rem;
+}
+
+.widget-test-intro {
+  max-width: 760px;
+  margin-bottom: clamp(1.6rem, 4vw, 2.5rem);
+}
+
+.widget-test-eyebrow {
+  margin: 0 0 0.7rem;
+  color: var(--orange-light);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.widget-test-intro h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.6rem, 8vw, 5.75rem);
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+}
+
+.widget-test-intro > p:last-child {
+  max-width: 680px;
+  margin: 1.25rem 0 0;
+  color: var(--copy);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.widget-test-stage {
+  width: 100%;
+  min-width: 0;
+  min-height: 780px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.widget-test-stage .transparion-widget-frame {
+  display: block;
+  width: 100%;
+  min-height: 780px;
+  border: 0;
+}
+
 .deletion-shell {
   width: min(100% - 2rem, 960px);
 }
